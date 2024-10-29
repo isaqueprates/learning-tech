@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animação</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        a{
+            position: relative;
+            right: 30px;
+            margin-bottom: 50px;
+            float: right;
+        }
+
+        div h1{
+            position:absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-70%,-50%);
+            font-weight: normal;
+            animation-name: nome;
+            animation-duration:2s;
+            animation-iteration-count:2;
+            animation-fill-mode: forwards;  
+            
+        }
+        img{
+            height: 300px;
+            margin: 80px 20px;
+            background-image: url("https://i.pinimg.com/564x/b2/98/c2/b298c2f10c38bc14be6e196c07f84c27.jpg");
+        }
+
+        @keyframes rodar {
+            0%{
+                background-color: pink;
+                border-radius: 20px;
+            }
+            20%{
+                border-radius: 50px;
+            }
+            100%{
+                border-radius: 100px;
+            }
+        }
+
+        @keyframes sayajin{
+            from{
+                background-image: url("https://i.pinimg.com/564x/2e/ce/ad/2ecead65f17f3630ab9bc542eb52fd83.jpg");
+            }
+            to{
+                background-image: url("https://i.pinimg.com/564x/b2/98/c2/b298c2f10c38bc14be6e196c07f84c27.jpg");
+            }
+        }
+        @keyframes nome{
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        #lory{
+            
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left:50% ;
+            transform: translate(-50%, -50%);
+            transform: rotate(10vh);
+            
+        }
+        #lory:hover{
+            background-color: aqua;
+            animation-name: rodar;
+            animation-duration: 3s;
+            transform: 100px;
+            animation-fill-mode: forwards;
+            
+        }
+        #goku{
+            width: 500px;
+            height: 900px;
+            animation-name: sayajin;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            
+            /*background-image: url("https://i.pinimg.com/564x/2e/ce/ad/2ecead65f17f3630ab9bc542eb52fd83.jpg");*/   
+        }
+        .losango{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background: #1E824C; 
+            transform: rotate(45deg);
+            -ms-transform: rotate(180deg);
+            -webkit-transform: rotate(45deg);
+            transform:skewX(0%);
+            top: 50px;
+            left: 800px;
+        }
+        #bt-next{
+            width: 100px;
+            padding: 5px;
+            position: absolute;
+            right: 50px;
+            top: 100px;
+            float: right;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="lory">
+        <h1>Lorena prates</h1>
+    </div>
+    <div id="goku"> goku</div>
+
+    <div class="losango"></div>
+    <div class="conteiner">
+        <input type="button" value="next" id="bt-next">
+        <a href="cards.html">Proxima página</a>
+    </div>
+</body>
+</html>

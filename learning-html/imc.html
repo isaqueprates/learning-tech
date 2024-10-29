@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            color: blue;
+        }
+    </style>
+    <script>
+
+        var peso, altura, nome, classificacao
+        nome = prompt('Digite seu nome')
+        altura = prompt('Digite sua altura:')
+        peso = prompt('Digite seu peso:')
+
+        altura = parseFloat(altura)
+        peso = parseFloat(peso)
+        altura /=  100
+        imc = peso /(altura * altura)
+        imc = parseInt(imc)
+
+        if (imc < 16) {
+           classificacao = 'Baixo peso muito grave '
+        } else if (imc >= 16 && imc <= 16.99) {
+            classificacao = 'Baixo peso grave '
+        } else if (imc >= 17 && imc <= 18.49) {
+            classificacao = 'Baixo peso '
+        } else if (imc >= 18.50 && imc <= 24.99) {
+            classificacao = 'Peso normal '
+        } else if (imc >= 25 && imc <= 29.99) {
+            classificacao = 'Sobrepeso '
+        } else if (imc >= 30 && imc <= 34.99) {
+            classificacao = 'Obesidade grau I '
+        } else if (imc >= 35 &&imc <= 39.99) {
+            classificacao = 'Obesidade grau II '
+        } else {
+            classificacao = 'Obesidade grau III '
+        }{
+            
+        }{
+            
+        }{
+            
+        } {
+            
+        } {
+            
+        } {
+            
+        } {
+            
+        }
+        document.write(nome + ' possui índice de massa corporal igual a '+imc+ ' sendo classificado como: '+classificacao )
+
+        //------------------ atividades 2 -------------------------------
+
+        //atividade comparador de idade
+       /* var idade = prompt('Digite sua idade')
+
+        if (idade >= 0 && idade < 15) {
+            document.write('Você tem '+ idade + ' anos é uma Criança!')
+        } else if (idade >= 15 && idade < 30) {
+            document.write('Você tem '+ idade +' anos é um Jovem!')
+        }else if(idade >= 30 && idade < 60){
+            document.write('Você tem '+ idade +' anos é um Adulto!')
+        }else{
+            alert('Você tem '+ idade +' anos é um Idoso!')
+        }*/
+
+        //------------------ atividades 1 -------------------------------
+
+        //atividade de notas do aluno
+        /*var media , nota1, nota2
+        nota1 = prompt('Digite a nota do aluno')
+        nota2 = prompt('Digite a segunda nota do aluno')
+        //nota1 =parseFloat(nota1)
+        //nota2 =parseFloat(nota2)
+        media = (parseFloat(nota1)+parseFloat(nota2))/2
+        if(media >= 6){
+            document.write('Parabéns você foi aprovado, sua média foi: '+ media)
+        }else{
+            document.write(':( você foi reprovado, sua média foi: '+ media)
+        }*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
