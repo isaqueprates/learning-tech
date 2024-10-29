@@ -1,0 +1,12 @@
+{
+  "compilerOptions": { 
+    "target": "ES2023",
+    "module": "commonjs",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true
+  }
+
+  //ler a documentação para saber mais.
+  //https://www.typescriptlang.org/tsconfig
+}

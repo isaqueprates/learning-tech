@@ -1,0 +1,20 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "translate": "npx tsc",
+    "start:dev": "tsx ./src/index.ts",
+    "start:dev:watch": "tsx --watch ./src/index.ts",
+    "start:dist": "npm run translate && node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
